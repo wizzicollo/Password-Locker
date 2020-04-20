@@ -200,4 +200,31 @@ def main():
                     print(
                         "You don't have any saved credentials yet. Try saving one")
                     print("\n")
+
+
+                elif short_code == 'fc':
+
+                print("Enter the account username you want to search for")
+
+                search_account_username = input()
+                if check_existing_credentials(search_account_username):
+                    search_credential = find_credential(search_account_username)
+                    print(f"{search_credential.account} {search_credential.account_username}")
+                    print('-' * 20)
+
+                    print(f"Account password.......{search_credential.account_password}")
+
+                else:
+                    print("That credential does not exist")
+
+                      elif short_code == "dl":
+                print("Enter the account username of the credential you would like to delete.")
+                my_delete = input("> ")
+                my_del = find_credential(my_delete)
+                # Credential.credential_list.remove(my_del)
+                print(
+                    f"Credential with  account username {my_delete} has been removed succefully")
+            elif short_code == "ex":
+                print("Logged out")
+                break
       
