@@ -108,3 +108,28 @@ def display_credentials():
     -------
     """
     return Credential.display_all_credentials()
+
+
+def main():
+    """
+    Returns
+    -------
+    """
+    # global account_password
+    user_name = input("Enter your name > ")
+
+    print(f"Hello {user_name}, welcome to password locker")
+    print("\n")
+    ask = input(f"Hello {user_name}. Do you have an Account? YES/N0 > ").lower()
+
+    if ask == "no":
+        print("Signup with password locker to have access")
+        user_name = input("Enter your User name > ")
+        create = input(
+            f"Hello {user_name}. Do you want a generated password? YES/N0 > ")
+        if create == "no":
+            print("-"*87)
+            print("|Don't mind if your password is not visible as you type. WE go your password secured.|")#
+            print("-"*87)
+            getpass.getpass()
+            print("YOU ARE NOW LOGGED IN")
