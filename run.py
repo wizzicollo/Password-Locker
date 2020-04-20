@@ -46,3 +46,15 @@ def delete_user(user):
     user
     """
     user.delete_user()
+
+def create_credential(account, account_username, account_password):
+    """
+    Parameters
+    ----------
+    name
+    credential_password
+    Returns
+    -------
+    """
+    new_credential = Credential(account, account_username, account_password)
+    return new_credential
