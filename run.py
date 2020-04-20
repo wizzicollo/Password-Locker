@@ -227,4 +227,12 @@ def main():
             elif short_code == "ex":
                 print("Logged out")
                 break
+         
+            elif ask == "yes":
+                print("Welcome back to our password locker. Enter your username and password to login")
+                user_name = input("Enter username > ")
+                print("-"*87)
+                print("|Don't mind if your password is not vissible as you type. WE go your password secured.|")#
+                print("-"*87)
+                account_password= getpass.getpass()  
       
