@@ -1,7 +1,5 @@
-
 import unittest
 from password import User, Credential
-
 
 
 class TestUser(unittest.TestCase):
@@ -48,7 +46,7 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()
         self.assertEqual(len(User.user_list), 1)
 
-     
+
 class TestCredential(unittest.TestCase):
     """
         Test class that defines test cases for the credential class behaviours.
@@ -109,4 +107,4 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(Credential.display_credentials(), Credential.credential_list)
 
 if __name__ == '__main__':
-    unittest.main()   
+    unittest.main()

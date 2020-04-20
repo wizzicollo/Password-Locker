@@ -21,11 +21,11 @@ class User:
         User.user_list.remove(self)
 
 
-    class Credential:
-        """
-        Class that generates new instances of credentials
-        """
-        credential_list = []
+class Credential:
+    """
+    Class that generates new instances of credentials
+    """
+    credential_list = []
 
     def __init__(self, account, account_username, account_password):
         self.account = account
@@ -46,7 +46,7 @@ class User:
 
     def test_save_credential(self):
         pass
-
+    
     @classmethod
     def find_by_account_username(cls, account_username):
         for credential in cls.credential_list:
@@ -64,4 +64,4 @@ class User:
 
     @classmethod
     def display_all_credentials(cls):
-        return cls.credential_list   
+        return cls.credential_list
