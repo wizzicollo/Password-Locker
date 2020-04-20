@@ -30,3 +30,19 @@ def generate_password(user):
     return user.generate_random_password()
 
 
+def save_user(user):
+    """
+    Function to save user
+    ----------
+    user
+    """
+    user.save_user()
+
+
+def delete_user(user):
+    """
+    Function to delete user
+    ----------
+    user
+    """
+    user.delete_user()
