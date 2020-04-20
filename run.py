@@ -185,4 +185,19 @@ def main():
 
                 print(
                     f"Your random password for {social_media} is: ", random_password(8))
+
+
+                     elif short_code == "dc":
+
+                if display_credentials():
+                    print("Here is a list of all your Credentials and passwords")
+                    print("\n")
+                    for credential in display_credentials():
+                        print(f"{credential.account} {credential.account_username}{account_password}")
+                        print("\n")
+                else:
+                    print("\n")
+                    print(
+                        "You don't have any saved credentials yet. Try saving one")
+                    print("\n")
       
