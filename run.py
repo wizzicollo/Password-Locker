@@ -58,3 +58,53 @@ def create_credential(account, account_username, account_password):
     """
     new_credential = Credential(account, account_username, account_password)
     return new_credential
+
+
+def save_credential(credential):
+    """
+    Function to save user
+    ----------
+    user
+    """
+    credential.save_credential()
+
+
+def delete_credential(credential):
+    """
+    Function to delete credential
+    ----------
+    credential
+    """
+    credential.delete_credential()
+
+
+def find_credential(account_username):
+    """
+    Function to find credential
+    ----------
+    name
+    Returns
+    -------
+    """
+    return Credential.find_by_account_username(account_username)
+
+
+def check_existing_credentials(account_username):
+    """
+    Function to check existing credential
+    ----------
+    name
+    Returns
+    -------
+    user
+    """
+    return Credential.find_by_account_username(account_username)
+
+
+def display_credentials():
+    """
+    Function to display credential
+    Returns
+    -------
+    """
+    return Credential.display_all_credentials()
