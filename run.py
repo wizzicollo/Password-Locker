@@ -133,3 +133,17 @@ def main():
             print("-"*87)
             getpass.getpass()
             print("YOU ARE NOW LOGGED IN")
+
+
+        while True:
+            print("""
+            USE THE SHORT CODES
+    1. cc - to create a new credential
+    2. dc - to display credential
+    3. fc - to find credential
+    4. dl - to delete credential
+    5. gp - to generate a random password
+    6. ex- to exit 
+            """)
+            short_code = input("Use short-codes to navigate > ").lower()
+      
