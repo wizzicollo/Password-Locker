@@ -314,3 +314,22 @@ def main():
 
                 else:
                     print("That credential does not exist")
+
+
+            elif short_code == "dl":
+                print("Enter the account username of the credential you would like to delete.")
+                my_delete = input("> ")
+                my_del = find_credential(my_delete)
+                Credential.credential_list.remove(my_del)
+                print(
+                    f"Credential with  account username {my_delete} has been removed succefully")
+            elif short_code == "ex":
+                print("Logged out")
+                break
+
+    else:
+        print("Please check your entry")
+
+
+if __name__ == "__main__":
+    main()
