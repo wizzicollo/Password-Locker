@@ -146,4 +146,23 @@ def main():
     6. ex- to exit 
             """)
             short_code = input("Use short-codes to navigate > ").lower()
-      
+
+ 
+            if short_code == "cc":
+                print(" Create account")
+                print("-" * 10)
+
+                print("Account ....")
+                account = input("> ")
+
+                print("username ....")
+                account_username = input("> ")
+
+                print("Enter Password")
+                account_password = input("> ")
+
+                save_credential(create_credential(account, account_username, account_password))
+
+                print("\n")
+                print(f"New Credential {account} {account_username} {account_password} has been created")
+                print("\n")     
