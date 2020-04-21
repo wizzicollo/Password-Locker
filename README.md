@@ -19,14 +19,6 @@ This is a project that enable clients to store and retrieve their credentials up
  - Exit for leaving the site
 
 ## Behavior Driven Development
-Behavior                |	   Input	                |     Output
-on load	                |  loging/signup                | Access to the account
-on login	            | show the credential detail	| the store credentials are displayed
-Search for credential	| input account	                |credentials with that name displays
-option of exit          | 	choose exit option          |	exit
-
-
-## Specifications
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display codes for navigation | In terminal: $./run.py | Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
